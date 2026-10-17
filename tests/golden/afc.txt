@@ -1,0 +1,5 @@
+# stem fldigi-sname text index samplerate samples tail-s tx-offset-Hz fnv1a64 -- fldigi TX at 1500 + offset, fldigi RX at 1500 with --benchmark-afc 1
+throb2_afc THROB2 cq 12 8000 110592 12 3 3fcafe1897d96a36
+throb4_afc THROB4 cq 13 8000 55296 12 -6 b1c9f716f35271f2
+thrbx2_afc THRBX2 cq 14 8000 110592 12 -3 a98e9ff8cabfb227
+thrbx4_afc THRBX4 cq 15 8000 55296 12 5 9e5d74c140799841

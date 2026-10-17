@@ -1,0 +1,13 @@
+# stem fldigi-sname text index samplerate samples tail-s fnv1a64(int16 LE) -- fldigi 4.2.13 bench TX, txlevel -12 dB; noise seed = 1000 * index + snr step
+throb1 THROB1 cq 0 8000 221184 12 1e3ca6573ec2e3ee
+throb2 THROB2 cq 1 8000 110592 12 edac30a6ec17dfea
+throb4 THROB4 cq 2 8000 55296 12 460b99f5989f6bbe
+thrbx1 THRBX1 cq 3 8000 221184 12 dc989420e8f7b17d
+thrbx2 THRBX2 cq 4 8000 110592 12 6b5a80c3dc0a27ff
+thrbx4 THRBX4 cq 5 8000 55296 12 0c727275956d8d84
+throb1_pangram THROB1 pangram 6 8000 704512 12 ded6fb14da12dcea
+throb2_pangram THROB2 pangram 7 8000 352256 12 7ce2d002746b6b9f
+throb4_pangram THROB4 pangram 8 8000 176128 12 e7df00b23593702d
+thrbx1_pangram THRBX1 pangram 9 8000 679936 12 e1c8b5222e97e80f
+thrbx2_pangram THRBX2 pangram 10 8000 339968 12 87774a4368c27804
+thrbx4_pangram THRBX4 pangram 11 8000 169984 12 479d1e3750f26fa4
