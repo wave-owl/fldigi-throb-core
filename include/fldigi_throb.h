@@ -29,12 +29,12 @@
 extern "C" {
 #endif
 
-#define FTHROB_VERSION_STRING "0.1.0"
+#define FTHROB_VERSION_STRING "0.1.1"
 #define FTHROB_ABI 1
 /* The modem rate of every submode (throb.h:34, THROB_SAMPLE_RATE). */
 #define FTHROB_RATE 8000
 
-/* "fldigi-throb-core 0.1.0 contract=throb-c1 abi=1 tx=1 dsp=0.4.0". Static string. The
+/* "fldigi-throb-core 0.1.1 contract=throb-c1 abi=1 tx=1 dsp=0.4.1". Static string. The
  * contract tag changes only with an incompatible API change; tx=1 announces the
  * transmitter. */
 const char *fthrob_version(void);

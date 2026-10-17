@@ -6,6 +6,7 @@
  */
 #define _POSIX_C_SOURCE 200809L
 #include "test_util.h"
+#include "fldigi_dsp.h"
 
 static const char *ALL[6] = {"THROB1", "THROB2", "THROB4", "THRBX1", "THRBX2", "THRBX4"};
 
@@ -37,7 +38,7 @@ static void test_api(void)
     int i, abi = fthrob_abi();
     const char *v = fthrob_version();
     CHECK(strstr(v, "contract=throb-c1") && strstr(v, "abi=1") && strstr(v, "tx=1") &&
-          strstr(v, "dsp=0.4.0"), "version %s", v);
+          strstr(v, "dsp=" FDSP_VERSION_STRING), "version %s", v);
     CHECK(abi == 1, "abi %d", abi);
     CHECK(fthrob_submode_count() == 6, "count");
     CHECK(fthrob_submode_at(-1) == NULL && fthrob_submode_at(6) == NULL, "at bounds");

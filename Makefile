@@ -16,7 +16,7 @@ CORE_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -ffp-contract=on -fPIC -Ii
              -I$(DSP)/include
 LDLIBS = -lm
 # Tests rebuild the golden noise exactly as Python does: no contraction there.
-TEST_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -ffp-contract=off -Iinclude
+TEST_FLAGS = -std=c99 -Wall -Wextra -Werror -pedantic -ffp-contract=off -Iinclude -I$(DSP)/include
 
 UNAME := $(shell uname)
 ifeq ($(UNAME),Darwin)
