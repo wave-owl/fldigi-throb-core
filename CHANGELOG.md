@@ -3,6 +3,10 @@
 All notable changes to fldigi-throb-core. Versions follow semantic versioning; the contract
 tag `throb-c1` changes only with an incompatible API change.
 
+## 0.1.2 - 2026-10-17
+
+- Pins fldigi-dsp-core 0.4.2 (changelog wording only). No functional change.
+
 ## 0.1.1 - 2026-10-17
 
 - Pins fldigi-dsp-core 0.4.1 (a comment of `cmac` reworded so that wave-owl's citation check

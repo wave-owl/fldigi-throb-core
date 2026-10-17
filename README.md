@@ -97,7 +97,7 @@ fldigi 4.2.13 (mirror `wave-owl/fldigi`, tag v4.2.13, commit e7c3ab37):
 | 729-944 | tone pairs, character sets, tone frequencies | `throb_common.c` |
 | `modem.cxx:319-324` | `set_freq` clamp | `throb_common.c` `throb_clamp_freq` |
 
-From fldigi-dsp-core 0.4.1: `fdsp_fir_init_hilbert`/`fdsp_fir_run` (Hilbert), `fdsp_fftfilt_*`,
+From fldigi-dsp-core 0.4.2: `fdsp_fir_init_hilbert`/`fdsp_fir_run` (Hilbert), `fdsp_fftfilt_*`,
 `fdsp_fir_init`/`fdsp_fir_irun` (sync filter), `fdsp_movavg_*` (s/n filter), `fdsp_cmac`,
 `fdsp_sincos`.
 
@@ -132,7 +132,7 @@ All declarations are in `include/fldigi_throb.h`.
 
 | Function | Description |
 |---|---|
-| `fthrob_version()`, `fthrob_abi()` | `"fldigi-throb-core 0.1.1 contract=throb-c1 abi=1 tx=1 dsp=0.4.1"`, `1`. |
+| `fthrob_version()`, `fthrob_abi()` | `"fldigi-throb-core 0.1.2 contract=throb-c1 abi=1 tx=1 dsp=0.4.2"`, `1`. |
 | `fthrob_submode_count/_at/_find` | The six submodes (`fthrob_submode`: name, fldigi id, symlen, tones, characters, ThrobX flag, pulse, spacing, span, RX filter, baud). |
 | `fthrob_rx_create(cfg)` | Receiver for `cfg->submode` at `cfg->carrier_hz` with `afc`, `squelch_on`, `squelch` (fldigi metric units, fldigi's default 5.0) and `reverse`. NULL for an unknown submode or a carrier fldigi's `set_freq` would move. |
 | `fthrob_rx_process(rx, x, n, text, max)` | 8 kHz audio in (int16 / 32768 scale); the characters fldigi prints (no NUL) out; returns their number; overflow is counted (`fthrob_rx_dropped`). |
