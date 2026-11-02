@@ -234,3 +234,12 @@ change. A change to a behaviour of the quirk table needs a new wave-owl ADR.
 GPL-3.0-or-later (see `LICENSE`), as fldigi. Throb was designed by Lionel Sear G3PPT. The
 fldigi modem is (c) 2006-2010 Dave Freese W1HKJ, ThrobX additions by Joe Veldhuis KD8ATU,
 adapted from gmfsk (c) 2001-2003 Tomi Manninen OH2BNS. Port (c) 2026 Gerolf Ziegenhain.
+
+<!-- wave-owl-source-sbom-docs:start -->
+## Source SBOMs
+
+Every published release, including prereleases, receives automatically generated
+CycloneDX JSON and readable documentation. See the [initial source report](SBOM.md),
+[CycloneDX JSON](SBOM.cdx.json) and [release policy](SBOM-POLICY.md) for scope,
+release assets, provenance declarations and reproduction instructions.
+<!-- wave-owl-source-sbom-docs:end -->
